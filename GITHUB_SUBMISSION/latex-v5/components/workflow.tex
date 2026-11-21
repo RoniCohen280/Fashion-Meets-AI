@@ -1,0 +1,22 @@
+\par\noindent
+\begin{english}\centering
+\begin{tikzpicture}[
+  stage/.style={draw=Silver,fill=PaperSteel,align=center,text width=26mm,
+    inner sep=1.25mm,minimum height=25mm,font=\fontsize{10.5}{13.5}\selectfont},
+  flow/.style={draw=Warm,line width=.7pt,-{Latex[length=2mm]}}]
+  \node[stage,fill=Graphite,draw=Graphite,text=Ivory] (data) at (14.4,0) {\texthebrew{ביקוש, מלאי והחזרות}};
+  \node[stage] (forecast) at (10.8,0) {\texthebrew{תחזית וזיהוי חריגים}};
+  \node[stage,fill=PaperPink] (decision) at (7.2,0) {\texthebrew{החלטת צוות על כמות, התאמה או חלוקה}};
+  \node[stage] (operation) at (3.6,0) {\texthebrew{ייצור, הפצה ומכירה}};
+  \node[stage,fill=Graphite,draw=Graphite,text=Ivory] (feedback) at (0,0) {\texthebrew{חוסרים, החזרות וגורל העודף}};
+  \draw[flow] (data.west) -- (forecast.east);
+  \draw[flow] (forecast.west) -- (decision.east);
+  \draw[flow] (decision.west) -- (operation.east);
+  \draw[flow] (operation.west) -- (feedback.east);
+  \draw[flow,dashed] (feedback.south) -- (0,-1.8) -- (14.4,-1.8) -- (data.south);
+\end{tikzpicture}\par
+\end{english}
+
+
+
+

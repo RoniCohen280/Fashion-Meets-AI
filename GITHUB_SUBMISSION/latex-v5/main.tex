@@ -1,0 +1,13 @@
+\documentclass[11pt,a4paper]{article}
+\input{style/magazine}
+\input{pages/metadata}
+\begin{document}
+\input{pages/cover}
+\input{pages/editorial}
+\ifnum\value{page}=20\relax\else
+  \PackageError{magazine}{Expected final folio 20, got \thepage}{Check page bounds.}
+\fi
+\end{document}
+
+
+

@@ -1,0 +1,14 @@
+\begin{english}\centering
+\begin{tikzpicture}[
+  stage/.style={draw=Silver,fill=PaperSteel,minimum width=47mm,minimum height=17mm,
+    align=center,font=\fontsize{12}{16}\selectfont,inner sep=2.5mm},
+  flow/.style={draw=Warm,line width=.65pt,-{Latex[length=2mm]}}]
+  \node[stage] (sketch) at (11.6,0) {\texthebrew{רעיון ושרטוט}};
+  \node[stage] (pattern) at (5.8,0) {\texthebrew{גזרה ודוגמה}};
+  \node[stage] (fitting) at (0,0) {\texthebrew{מדידה ומפרט}};
+  \draw[flow] (sketch.west) -- (pattern.east);
+  \draw[flow] (pattern.west) -- (fitting.east);
+\end{tikzpicture}\par
+\end{english}
+\Caption{שלוש תחנות בתהליך פיתוח הבגד, מן הרעיון ועד למפרט שהמפעל מקבל.}
+
