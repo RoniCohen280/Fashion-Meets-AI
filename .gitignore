@@ -1,0 +1,12 @@
+latex-v5/*.aux
+latex-v5/*.fls
+latex-v5/*.fdb_latexmk
+latex-v5/*.log
+latex-v5/*.out
+latex-v5/*.synctex*
+latex-v5/*.toc
+latex-v5/*.xdv
+latex-v5/main.pdf
+__pycache__/
+.DS_Store
+Thumbs.db
